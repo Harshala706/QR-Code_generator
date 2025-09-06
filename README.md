@@ -11,11 +11,24 @@ Run `pip install qrcode`
 ### How to run the script
 - Provide your desired URL in the script
 - Execute `python3 QR_code_generator.py`
+### Program:
+```
+import qrcode
 
+data = """Product: Toor dal
+Weight: 1 kg
+MRP: Rs.100
+Packing Date: 15-01-2024"""
+
+qr = qrcode.make(data)
+
+qr.save("toor_dal_qr.png")
+
+print("QR Code generated and saved as 'toor_dal_qr.png'")
+```
 ### Screenshot showing the sample use of the script
-<p align="center">
-  <a href="output 1.png"><img src="https://user-images.githubusercontent.com/85709371/151921721-132e76c1-1604-49ad-9234-1ef3cc9ac45b.png" alt="url_qrcode"></a>
-</p>
+<img width="450" height="450" alt="toor_dal_qr" src="https://github.com/user-attachments/assets/ea382342-f290-4bc7-875d-e01239cb303a" />
+
 
 ## *Author Name*
-[Vikrant](https://github.com/vikrant-v28)
+B Harshala Reddy
